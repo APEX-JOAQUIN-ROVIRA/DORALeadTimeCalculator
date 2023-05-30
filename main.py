@@ -20,11 +20,9 @@ import util
 # TARGETS   A comma separated list of values of the names of repositories to calculte
 load_dotenv()
 
-access_token = os.environ.get("GH_TOKEN")
-targets = set(map(lambda v: v.strip(), os.environ.get("TARGETS").split(",")))
-base_branch = "master"  # TODO: make configurable
 
-# Login with access token
+base_branch = "master"  # TODO: make configurable
+targets = set(map(lambda v: v.strip(), os.environ.get("TARGETS").split(",")))
 g = Github(os.environ.get("GH_TOKEN"))
 
 # Gather target repo data

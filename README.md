@@ -25,4 +25,4 @@ ProjectB                         5.50
 ProjectC                        13.79
 ```
 
-> :information_source: _There is no error handling as this is just a simple automation script._
+> _**Note**: There is no error handling as this is just a simple automation script._
